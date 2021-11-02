@@ -1,38 +1,43 @@
-url: https://web-budget.github.io
-baseurl: /site
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that.
+# This file is *NOT* reloaded automatically when you use 'bundle exec jekyll serve'.
+# If you change this file, please restart the server process.
 
 # Site settings
-title: webBudget
-email: contato@arthurgregorio.eti.br
+# are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+#theme: jekyll-agency
+remote_theme: raviriley/agency-jekyll-theme
+
+url    : "https://web-budget.github.io"
+baseurl: "/site"
+
+title      : webBudget
+email      : contato@arthurgregorio.eti.br #this is also the email contact forms will go to
 description: "Open source financial control"
+author     : Arthur Gregório
+# logo:     #optional, defaults to site title
+  # path: assets\img\clients\creative-market.jpg
+  # height: 60 #height in px, defaults to 52px
 
-# Team names, titles and social links
-people:
-- name: Arthur Gregório
-  pic: 4
-  position: Lead Developer
-  social:
-    - title: twitter
-      url: https://twitter.com/gregorioarthur
-    - title: github
-      url: https://github.com/arthurgregorio
-    - title: linkedin
-      url: https://www.linkedin.com/in/gregorioarthur/
+locale: "en-US" # See available languages in _data/sitetext.yml
 
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
-social:
-  - title: twitter
-    url: http://twitter.com/gregorioarthur
-  - title: github
-    url: http://github.com/web-budget
-  - title: linkedin
-    url: https://www.linkedin.com/in/gregorioarthur/
+analytics:
+  google: #Google Analytics tracking code here
 
-# Postal address (add as many lines as necessary)
-address:
-  - line: Foz do Iguaçu - Paraná
-  - line: Brasil
+collections:
+  portfolio:
 
-# Build settings
 markdown: kramdown
-permalink: pretty
+
+# Uncomment following line to use Formspree form ID based URL instead of email based URL
+# Details: https://help.formspree.io/hc/en-us/articles/360017735154-How-to-prevent-spam
+# formspree_form_path: "f/a_form_id"
+
+plugins:
+  - jekyll-remote-theme
