@@ -1,64 +1,37 @@
 url: https://web-budget.github.io
-baseurl: /site/
+baseurl: /site
 
 # Site settings
 title: webBudget
 email: contato@arthurgregorio.eti.br
-description: "webBudget website"
-
+description: "Open source financial control"
 
 # Team names, titles and social links
 people:
-- name: Kay Garland
+- name: Arthur Gregório
   pic: 1
-  position: Lead Designer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: stack-overflow
-      url: #
-
-- name: Larry Parker
-  pic: 2
-  position: Lead Marketer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: linkedin
-      url: #
-
-- name: Diana Petersen
-  pic: 3
   position: Lead Developer
   social:
     - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: google-plus
-      url: #
+      url: https://twitter.com/gregorioarthur
+    - title: github
+      url: https://github.com/arthurgregorio
+    - title: linkedin
+      url: https://www.linkedin.com/in/gregorioarthur/
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
-    url: http://twitter.com/jekyllrb
-  - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket 
-    url: http://bitbucket.org/jekyll
+    url: http://twitter.com/gregorioarthur
   - title: github
-    url: http://github.com/jekyll
+    url: http://github.com/web-budget
+  - title: linkedin
+      url: https://www.linkedin.com/in/gregorioarthur/
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
+  - line: Foz do Iguaçu - Paraná
+  - line: Brasil
 
 # Build settings
 markdown: kramdown
