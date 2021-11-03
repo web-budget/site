@@ -13,12 +13,12 @@ en: &DEFAULT_EN
   nav:
     - title: "Features"
       section: services
-    - title: "Screen Shots"
+    - title: "Screenshots"
       section: portfolio
-    - title: "About"
+    - title: "Learn"
       section: about
     - title: "Team"
-      section: team    
+      section: team
 en-US:
   <<: *DEFAULT_EN
 en-CA:
