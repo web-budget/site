@@ -61,7 +61,7 @@ en: &DEFAULT_EN
   team:
     title: "Who built this?"
     text: "meet the author"
-    subtext: "webBudget was born in 2011 by the desire of the author to have more control of their own finances, first as a desktop app now is a complete web application developed with modern technologies and relying on financial concepts from world grade ERP's"
+    subtext: "webBudget was born in 2009 by the desire of the author to have more control of their own finances, first as a desktop app now is a complete web application developed with modern technologies and relying on financial concepts from world grade ERP's"
     section: team
     people:
       - name: "Arthur Gregório"
