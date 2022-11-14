@@ -1,167 +1,207 @@
-#
-# Work based on https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml
-#
-# Configuration: Add to _config.yml
-# locale: "en-US"  [YOUR PREFERRED LOCALE]
-#
-# How to use:
-# {{ site.data.ui-text[site.locale].<var_name> | default: 'text' }}
-
-# English (default)
-# -----------------
-en: &DEFAULT_EN
+# Portuguese
+pt: &DEFAULT_PT
   header:
-    title: Welcome to
+    title: Conheça o
     text: webBudget
-    button: Tell Me More
+    button: Funcionalidades
     buttonlink: "#services"
 
   services:
-    title: "Features"
-    text: "First of all, webBudget is free and open-source, that means you never have to pay for the features below"
+    title: "Funcionalidades"
+    text: >
+      O webBudget é um sistema de controle financeiro pensado e projetado para o uso pessoal ou em  pequenas empresas. 
+      Su principal objetivo é prover o mínimo de controle sem complexidades e com o máximo de visibilidade. Confira 
+      abaixo algumas de suas principais funcionalidades
     section: services
     list:
-      - title: "Income & Expenses"
-        desc: "You will be able to track your expenses and receipts in a given period of time, defined by you, it can be a a week, a month, you decide!"
-        icon: fas fa-search-dollar
-      - title: "Classification"
-        desc: "Separate your bills in personalized types of classes, it will help you to track specific expenses and receipts in a more granular way"
-        icon: fas fa-chart-line      
-      - title: "Investments"
-        desc: "Track your investments in funds, stock market or cryptos, all in one place and integrated with your budget"
-        icon: fab fa-bitcoin
-      - title: "Dashboards"
-        desc: "It's easier to see numbers with graphs, rigth? So, webBudget will provide you a complete set of dashboards to track your personal finances"
-        icon: fas fa-chart-line
-      - title: "Credit Cards"
-        desc: "Import your credit card invoice, apply classification to your expenses and track how much you spent on every period"
+      - title: "Períodos financeiros"
+        desc: "Controle suas contas em períodos pré-definidos, ao final, realize o fechamento e acompanhe os resultados"
+        icon: fas fa-file-invoice-dollar
+      - title: "Despesas fixas e variáveis"
+        desc: "Cadastre suas despeasas fixas ou variáveis para acompanhá-las a cada novo período"
+        icon: fas fa-money-bill
+      - title: "Cartões de crédito"
+        desc: "Controle seus gastos com cartão de crédito utilizando a importação automática de fatura e classicando seus gastos"
         icon: fas fa-credit-card
-      - title: "Car Log Book"
-        desc: "You ever wonder how much your car can consume from your budget? We can answer this question easily with the car log book feature"
-        icon: fas fa-car
+      - title: "Classificação"
+        desc: "Classifique suas receitas e despesas criando uma estrutura personlizada de centros de custo e classes de movimentação financeira"
+        icon: fas fa-tag
+      - title: "Investimentos"
+        desc: "Oferece um suporte simplificado ao controle de investimentos para fundos e ações"
+        icon: fas fa-piggy-bank
+      - title: "Dashboards"
+        desc: "Acompanhe suas contas de maneira visual com dashboards e gráficos que facilitam ver sua saúde financeira"
+        icon: fas fa-chart-line
 
   portfolio:
-    title: "Screenshots"
-    text: "Some screenshots of the application"
+    title: "Imagens"
+    text: "Veja algumas capturas de tela do sistema em funcionamento"
     section: portfolio
-    closebutton: "Close"
+    closebutton: "Fechar"
 
   about:
-    title: "Learn"
-    text: "Helpful links to learn more about the software"
+    title: "About Us"
+    text: "our story"
+    body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported."
     section: about
+
+  timeline:
+    title: "Linha do tempo"
+    text: "Um pouco da história do webBudget na perspectiva do autor"
+    section: timeline
+    events:
+      - title: "Primeiras ideias"
+        year: "2009-2010"
+        desc: "Projeto desenhado para atender a organização financeira básica de uma pessoa, desktop, executava de um pendrive"
+        image: assets/img/timeline/1.jpg
+        alt:
+      - title: "Virou rotina"
+        year: "2011-2013"
+        desc: "Usar o sistema havia se tornado uma regra, uma versão otimizada para a web era necessária"
+        image: assets/img/timeline/2.jpg
+        alt:
+      - title: "Nasce a versão 2"
+        year: "2013-2014"
+        desc: "A versão 2 nasce com um layout simples porém funcional, podia ser acessada pelo browser"
+        image: assets/img/timeline/3.jpg
+      - title: "Versão 3 e um novo visual"
+        year: "2016"
+        desc: "A versão três surge trazendo um novo visual utilizando o AdminLTE como visual para os componentes"
+        image: assets/img/timeline/4.jpg
+      - title: "v4"
+        year: "2021-presente"
+        desc: "Inicia-se a ideia da nova versão agora com novas funcionalidades e utilizando novas tecnologias"
+        image: assets/img/timeline/4.jpg
+    end: "O que <br> vem <br> agora?"
+
+  clients:
+    section: clients
+    max-height: 100px
+    horizontal-scrolling: "no"
     list:
-      - title: "[User Manual](#)"
-        icon: fas fa-question-circle
-      - title: "[Tech Resources](#)"
-        icon: fas fa-cogs
-      - title: "[Github Repo](https://github.com/web-budget)"
-        icon: fab fa-github
+      - title: "envato"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/envato.jpg
+      - title: "designmodo"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/designmodo.jpg
+      - title: "themeforest"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/themeforest.jpg
+      - title: "Creative Market"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/creative-market.jpg
 
   team:
-    title: "Who built this?"
-    text: "meet the author"
-    subtext: "webBudget was born in 2009 by the desire of the author to have more control of their own finances, first as a desktop app now is a complete web application developed with modern technologies and relying on financial concepts from world grade ERP's"
+    title: "O Autor"
+    text: "Conheça um pouco sobre o autor do projeto"
+    subtext: Gostaria de contribuir? <br> Entre em contato ou acesse a página do projeto no github para mais informações!
     section: team
     people:
       - name: "Arthur Gregório"
-        role: "Author and Lead Developer"
-        image: assets/img/team/1.jpg
+        role: "Desenvolvedor"
+        image: assets/img/team/arthur.jpg
         social:
           - url: https://twitter.com/gregorioarthur
             icon: fab fa-twitter
           - url: https://github.com/arthurgregorio
             icon: fab fa-github
-          - url: https://linkedin.com/in/gregorioarthur/
+          - url: https://www.linkedin.com/in/gregorioarthur/
             icon: fab fa-linkedin-in
+
+  contact:
+    title: "Contact Us"
+    text: "Lorem ipsum or call 123456789"
+    section: contact
+    name: "Name*"
+    name-validation: "Please enter your name."
+    email: "Email*"
+    email-validation: "Please enter your email address."
+    phone: "Phone Number"
+    phone-validation: "Please enter your phone number."
+    message: "Message*"
+    message-validation: "Please enter a message."
+    subject: "Contact Form Submission"
+    submit: "Send Message"
 
   footer:
     legal: "Privacy Policy"
     social:
-      - url: https://twitter.com/gregorioarthur
-        icon: "fab fa-twitter"
-      - url: https://linkedin.com/in/gregorioarthur/
-        icon: "fab fa-linkedin-in"
       - url: https://github.com/web-budget
         icon: "fab fa-github"
-en-US:
-  <<: *DEFAULT_EN
-en-CA:
-  <<: *DEFAULT_EN
-en-GB:
-  <<: *DEFAULT_EN
-en-AU:
-  <<: *DEFAULT_EN
+pt-BR:
+  <<: *DEFAULT_PT
+pt-PT:
+  <<: *DEFAULT_PT
 
-# Spanish
-# -------
-es: &DEFAULT_ES
+# English
+en: &DEFAULT_EN
   header:
-    title: ¡Bienvenido a nuestro Estudio!
-    text: Es un placer conocerle
-    button: Ver más
-    buttonlink: "#servicios"
+    title: Welcome to our Studio!
+    text: It's Nice To Meet You
+    button: Tell Me More
+    buttonlink: "#services"
 
   services:
-    title: "Servicios"
+    title: "Services"
     text: "Lorem ipsum"
-    section: servicios
+    section: services
     list:
-      - title: "Comercio Electrónico"
+      - title: "E-Commerce"
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
-      - title: "Diseño Responsivo"
+        icon: fas fa-shopping-cart
+      - title: "Responsive Design"
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
         icon: fas fa-laptop
       - title: "[Markdown](https://en.wikipedia.org/wiki/Markdown)"
-        desc: "Su descripción aquí, soporte completo de **Markdown**"
+        desc: "Your description here, full **Markdown** support"
         icon: fab fa-markdown
 
   portfolio:
-    title: "Portafolio"
+    title: "Portfolio"
     text: "Lorem ipsum dolor sit amet consectetur."
-    section: portafolio
-    closebutton: "Cerrar Proyecto"
+    section: portfolio
+    closebutton: "Close Project"
 
   timeline:
-    title: "Cronología"
+    title: "Timeline"
     text: "Lorem ipsum timeline"
-    section: cronologia
+    section: timeline
     # left is the default
     #start_align: "left"
     events:
-      - title: "Nuestro Humilde Comienzo"
+      - title: "Our Humble Beginnings"
         year: "2009-2011"
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
         image: assets/img/timeline/1.jpg
         alt:
-      - title: "Una Agencia nace"
+      - title: "An Agency is Born"
         year: "March 2011"
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
         image: assets/img/timeline/2.jpg
         alt:
-      - title: "La plantilla Jekyll es creada"
+      - title: "Jekyll Theme is created"
         year: "2019"
-        desc: "Ravi Riley convirtió Agency, una plantilla basada en Bootstrap, en una plantilla de Jekyll. La plantilla Jekyll puede ser instalada commo una gema de Ruby (Ruby gem) o remotamente. Para más información, visite la documentación."
+        desc: "Ravi Riley converted Agency, a Bootstrap-based theme, into a Jekyll theme. The Jekyll theme can be installed as a Ruby gem, or remotely. For more information, visit the documentation."
         image: assets/img/timeline/3.jpg
         alt: image alt text
-      - title: "Título"
+      - title: "Title"
         year: "2009-2011"
-        desc: "Su descripción aquí, **Markdown** es soportado completamente."
+        desc: "Your description here, **Markdown** is fully supported."
         image: assets/img/timeline/4.jpg
         alt:
         # you can enforce the alignment
         align: right
-    end: "¡Se parte <br> de Nuestra <br> Historia!"
+    end: "Be Part <br> of Our <br> Story!"
 
   about:
-    title: "Sobre nosotros"
-    text: "nuestra historia"
+    title: "About Us"
+    text: "our story"
     body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported."
-    section: nosotros
+    section: about
 
   clients:
-    section: clientes
+    section: clients
     max-height: 100px
     horizontal-scrolling: "" #"yes/no"
     list:
@@ -179,10 +219,10 @@ es: &DEFAULT_ES
         logo: assets/img/clients/creative-market.jpg
 
   team:
-    title: "NUESTRO INCREÍBLE EQUIPO"
+    title: "OUR AMAZING TEAM"
     text: "Lorem ipsum dolor sit amet consectetur."
     subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
-    section: equipo
+    section: team
     people:
       - name: "Kay Garland"
         role: "Lead Designer"
@@ -216,22 +256,22 @@ es: &DEFAULT_ES
             icon: fab fa-linkedin-in
 
   contact:
-    title: "Contáctenos"
+    title: "Contact Us"
     text: "Lorem ipsum or call 123456789"
-    section: contacto
-    name: "Nombre*"
-    name-validation: "Por favor ingrese su nombre."
-    email: "Correo Electrónico*"
-    email-validation: "Por favor ingrese su correo electrónico."
-    phone: "Número Telefónico*"
-    phone-validation: "Por favor ingrese su número telefónico."
-    message: "Mensaje*"
-    message-validation: "Por favor escriba un mensaje."
-    subject: "Envío del formulario de contacto"
-    submit: "Enviar Mensaje"
+    section: contact
+    name: "Name*"
+    name-validation: "Please enter your name."
+    email: "Email*"
+    email-validation: "Please enter your email address."
+    phone: "Phone Number"
+    phone-validation: "Please enter your phone number."
+    message: "Message*"
+    message-validation: "Please enter a message."
+    subject: "Contact Form Submission"
+    submit: "Send Message"
 
   footer:
-    legal: "Política de Privacidad"
+    legal: "Privacy Policy"
     social:
       - url: https://twitter.com
         icon: "fab fa-twitter"
@@ -243,7 +283,11 @@ es: &DEFAULT_ES
         icon: "fab fa-github"
       - url: https://instagram.com
         icon: "fab fa-instagram"
-es-ES:
-  <<: *DEFAULT_ES
-es-CO:
-  <<: *DEFAULT_ES
+en-US:
+  <<: *DEFAULT_EN
+en-CA:
+  <<: *DEFAULT_EN
+en-GB:
+  <<: *DEFAULT_EN
+en-AU:
+  <<: *DEFAULT_EN
