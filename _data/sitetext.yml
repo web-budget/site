@@ -1,8 +1,9 @@
 # Portuguese
 pt: &DEFAULT_PT
   header:
-    title: Conheça o
-    text: webBudget
+    title-1: web
+    title-2: Budget
+    text: Sistema de controle financeiro grátis e de código aberto
     button: Funcionalidades
     buttonlink: "#services"
 
@@ -137,7 +138,8 @@ pt-PT:
 # English
 en: &DEFAULT_EN
   header:
-    title: Welcome to our Studio!
+    title-1: web
+    title-2: Budget
     text: It's Nice To Meet You
     button: Tell Me More
     buttonlink: "#services"
