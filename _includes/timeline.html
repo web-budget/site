@@ -1,6 +1,6 @@
 <!-- About -->
 {% if site.locale and site.locale != "" and site.locale != nil %}
-<section class="page-section" id="{{ site.data.sitetext[site.locale].timeline.section | default: "about" }}">
+<section class="bg-light page-section" id="{{ site.data.sitetext[site.locale].timeline.section | default: "about" }}">
 <div class="container">
     <div class="row">
         <div class="col-lg-12 text-center">
@@ -31,7 +31,7 @@
                     {% endif %}
                     {%- endif -%}
                     <div class="timeline-image">
-                        <img class="rounded-circle img-fluid" src="{{ event.image }}" alt="{{ event.alt | default: ""}}">
+                        <img class="img-fluid" style="margin-top: 15%; height: 100px;" src="{{ event.image }}" alt="{{ event.alt | default: ""}}">
                     </div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">

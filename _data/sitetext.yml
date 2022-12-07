@@ -40,12 +40,6 @@ pt: &DEFAULT_PT
     section: portfolio
     closebutton: "Fechar"
 
-  about:
-    title: "About Us"
-    text: "our story"
-    body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported."
-    section: about
-
   timeline:
     title: "Linha do tempo"
     text: "Um pouco da história do webBudget na perspectiva do autor"
@@ -53,50 +47,32 @@ pt: &DEFAULT_PT
     events:
       - title: "Primeiras ideias"
         year: "2009-2010"
-        desc: "Projeto desenhado para atender a organização financeira básica de uma pessoa, desktop, executava de um pendrive"
-        image: assets/img/timeline/1.jpg
+        desc: "Projeto desenhado para atender a organização financeira básica de uma pessoa, executava de um pendrive"
+        image: assets/img/timeline/1.png
         alt:
       - title: "Virou rotina"
         year: "2011-2013"
-        desc: "Usar o sistema havia se tornado uma regra, uma versão otimizada para a web era necessária"
-        image: assets/img/timeline/2.jpg
+        desc: "Usar o sistema havia se tornado uma regra, uma versão para a web era necessária"
+        image: assets/img/timeline/2.png
         alt:
       - title: "Nasce a versão 2"
         year: "2013-2014"
         desc: "A versão 2 nasce com um layout simples porém funcional, podia ser acessada pelo browser"
-        image: assets/img/timeline/3.jpg
+        image: assets/img/timeline/3.png
       - title: "Versão 3 e um novo visual"
         year: "2016"
-        desc: "A versão três surge trazendo um novo visual utilizando o AdminLTE como visual para os componentes"
-        image: assets/img/timeline/4.jpg
+        desc: "A versão três surge trazendo um novo visual e novas funcionalidades, mais rápida e estável"
+        image: assets/img/timeline/4.png
       - title: "v4"
         year: "2021-presente"
-        desc: "Inicia-se a ideia da nova versão agora com novas funcionalidades e utilizando novas tecnologias"
-        image: assets/img/timeline/4.jpg
+        desc: "Uma nova versão com novas funcionalidades e utilizando novas tecnologias"
+        image: assets/img/timeline/5.png
     end: "O que <br> vem <br> agora?"
-
-  clients:
-    section: clients
-    max-height: 100px
-    horizontal-scrolling: "no"
-    list:
-      - title: "envato"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/envato.jpg
-      - title: "designmodo"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/designmodo.jpg
-      - title: "themeforest"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/themeforest.jpg
-      - title: "Creative Market"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/creative-market.jpg
 
   team:
     title: "O Autor"
     text: "Conheça um pouco sobre o autor do projeto"
-    subtext: Gostaria de contribuir? <br> Entre em contato ou acesse a página do projeto no github para mais informações!
+    subtext: Gostaria de contribuir? <br> Entre em <a href='mailto:contato@consusoft.com.br'>contato</a> ou acesse a página do projeto no <a href='https://github.com/web-budget/'>github</a> para mais informações!
     section: team
     people:
       - name: "Arthur Gregório"
@@ -110,23 +86,8 @@ pt: &DEFAULT_PT
           - url: https://www.linkedin.com/in/gregorioarthur/
             icon: fab fa-linkedin-in
 
-  contact:
-    title: "Contact Us"
-    text: "Lorem ipsum or call 123456789"
-    section: contact
-    name: "Name*"
-    name-validation: "Please enter your name."
-    email: "Email*"
-    email-validation: "Please enter your email address."
-    phone: "Phone Number"
-    phone-validation: "Please enter your phone number."
-    message: "Message*"
-    message-validation: "Please enter a message."
-    subject: "Contact Form Submission"
-    submit: "Send Message"
-
   footer:
-    legal: "Privacy Policy"
+    legal: "Política de Privacidade"
     social:
       - url: https://github.com/web-budget
         icon: "fab fa-github"

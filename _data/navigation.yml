@@ -3,8 +3,8 @@ pt: &DEFAULT_PT
   nav:
     - title: "Funcionalidades"
       section: services
-    - title: "Imagens"
-      section: portfolio
+#    - title: "Imagens"
+#      section: portfolio
     - title: "Linha do tempo"
       section: timeline
     - title: "Autor"

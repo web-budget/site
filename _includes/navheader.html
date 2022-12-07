@@ -5,7 +5,8 @@
             {%- if site.logo -%}
             <img height="{{ site.logo.height | default: 52 }}" src="{{ site.logo.path }}"/>
             {%- else -%}
-            {{ site.title }}
+            <span class="wb-logo">web</span>
+            <span class="wb-logo wb-logo-white" style="margin-left: -4px;">Budget</span>
             {%- endif -%}
         </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,9 +52,9 @@
     <div class="container">
         <div class="intro-text">
             {%- if site.data.sitetext[site.locale].header.title-1 -%}
-            <div style="display: inline-flex">
+            <div style="display: inline-flex" class="wb-logo-big">
                 <div class="wb-logo">{{ site.data.sitetext[site.locale].header.title-1 | markdownify }}</div>
-                <div class="wb-logo wb-logo-black">{{ site.data.sitetext[site.locale].header.title-2 | markdownify }}</div>
+                <div class="wb-logo wb-logo-white">{{ site.data.sitetext[site.locale].header.title-2 | markdownify }}</div>
             </div>
             {%- endif -%}
             {%- if site.data.sitetext[site.locale].header.text -%}

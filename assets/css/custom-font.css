@@ -8,11 +8,14 @@
 .wb-logo {
     font-family: 'ReklameScript', sans-serif !important;
     color: #007fff;
-    font-size: 9rem !important;
 }
 
-.wb-logo-black {
-    color: black;
+.wb-logo-white {
+    color: white;
+}
+
+.wb-logo-big {
+    font-size: 9rem !important;
 }
 
 .wb-logo-small {
