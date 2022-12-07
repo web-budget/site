@@ -11,17 +11,17 @@ pt: &DEFAULT_PT
     title: "Funcionalidades"
     text: >
       O webBudget é um sistema de controle financeiro pensado e projetado para o uso pessoal ou em  pequenas empresas. 
-      Su principal objetivo é prover o mínimo de controle sem complexidades e com o máximo de visibilidade. Confira 
+      Seu principal objetivo é prover o mínimo de controle sem complexidades e com o máximo de visibilidade. Confira 
       abaixo algumas de suas principais funcionalidades
     section: services
     list:
-      - title: "Períodos financeiros"
+      - title: "Períodos Financeiros"
         desc: "Controle suas contas em períodos pré-definidos, ao final, realize o fechamento e acompanhe os resultados"
         icon: fas fa-file-invoice-dollar
-      - title: "Despesas fixas e variáveis"
+      - title: "Despesas Fixas e Variáveis"
         desc: "Cadastre suas despeasas fixas ou variáveis para acompanhá-las a cada novo período"
         icon: fas fa-money-bill
-      - title: "Cartões de crédito"
+      - title: "Cartões de Crédito"
         desc: "Controle seus gastos com cartão de crédito utilizando a importação automática de fatura e classicando seus gastos"
         icon: fas fa-credit-card
       - title: "Classificação"
@@ -101,151 +101,94 @@ en: &DEFAULT_EN
   header:
     title-1: web
     title-2: Budget
-    text: It's Nice To Meet You
-    button: Tell Me More
+    text: Financial control free and open-source
+    button: Functionalities
     buttonlink: "#services"
 
   services:
     title: "Services"
-    text: "Lorem ipsum"
+    text: >
+      webBudget is a free and open-source application to manage your personal finances or even for small companies. It 
+      will provide basic financial management with simple and clear functionalities and giving maximum visibility on what
+      is happening. Bellow you can find more details about the functionalities
     section: services
     list:
-      - title: "E-Commerce"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-shopping-cart
-      - title: "Responsive Design"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-laptop
-      - title: "[Markdown](https://en.wikipedia.org/wiki/Markdown)"
-        desc: "Your description here, full **Markdown** support"
-        icon: fab fa-markdown
+      - title: "Financial Periods"
+        desc: "Define fixed periods to have more control on your money, when it finishes, close it to see your results"
+        icon: fas fa-file-invoice-dollar
+      - title: "Fixed and variable expenses"
+        desc: "Track your expenses by period or if it happens every period, it can be registered as a fixed expense"
+        icon: fas fa-money-bill
+      - title: "Credit Card"
+        desc: "Import and organize your credit card invoice, dont lose track on what you are paying"
+        icon: fas fa-credit-card
+      - title: "Classification"
+        desc: "Organize your expenses/revenues with cost centers and classes, all personalized"
+        icon: fas fa-tag
+      - title: "Investments"
+        desc: "Simple support for tracking investments on stocks or funds"
+        icon: fas fa-piggy-bank
+      - title: "Dashboards"
+        desc: "Keep tracking on what is happening with your money using helpful dashboards"
+        icon: fas fa-chart-line
 
   portfolio:
-    title: "Portfolio"
-    text: "Lorem ipsum dolor sit amet consectetur."
+    title: "Screenshots"
+    text: "See some screenshots from the application"
     section: portfolio
-    closebutton: "Close Project"
+    closebutton: "Close"
 
   timeline:
     title: "Timeline"
-    text: "Lorem ipsum timeline"
+    text: "A bit of history about the software"
     section: timeline
-    # left is the default
-    #start_align: "left"
     events:
-      - title: "Our Humble Beginnings"
-        year: "2009-2011"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-        image: assets/img/timeline/1.jpg
+      - title: "First Ideas"
+        year: "2009-2010"
+        desc: "Small project, designed to run from a pendrive and provide basic financial management"
+        image: assets/img/timeline/1.png
         alt:
-      - title: "An Agency is Born"
-        year: "March 2011"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-        image: assets/img/timeline/2.jpg
+      - title: "Became Routine"
+        year: "2011-2013"
+        desc: "Using the software was part of daily basis, a web version start to be necessary"
+        image: assets/img/timeline/2.png
         alt:
-      - title: "Jekyll Theme is created"
-        year: "2019"
-        desc: "Ravi Riley converted Agency, a Bootstrap-based theme, into a Jekyll theme. The Jekyll theme can be installed as a Ruby gem, or remotely. For more information, visit the documentation."
-        image: assets/img/timeline/3.jpg
-        alt: image alt text
-      - title: "Title"
-        year: "2009-2011"
-        desc: "Your description here, **Markdown** is fully supported."
-        image: assets/img/timeline/4.jpg
-        alt:
-        # you can enforce the alignment
-        align: right
-    end: "Be Part <br> of Our <br> Story!"
-
-  about:
-    title: "About Us"
-    text: "our story"
-    body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported."
-    section: about
-
-  clients:
-    section: clients
-    max-height: 100px
-    horizontal-scrolling: "" #"yes/no"
-    list:
-      - title: "envato"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/envato.jpg
-      - title: "designmodo"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/designmodo.jpg
-      - title: "themeforest"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/themeforest.jpg
-      - title: "Creative Market"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/creative-market.jpg
+      - title: "Version 2 is born"
+        year: "2013-2014"
+        desc: "Version 2 is born, now with web support and with a simple layout"
+        image: assets/img/timeline/3.png
+      - title: "Version 3 and a new visual"
+        year: "2016"
+        desc: "Version 3 comes with an entire new visual, more stable and with new functionalities"
+        image: assets/img/timeline/4.png
+      - title: "v4"
+        year: "2021-present"
+        desc: "An entire new version, new technologies and also new features"
+        image: assets/img/timeline/5.png
+    end: "What <br> is comming <br> next?"
 
   team:
-    title: "OUR AMAZING TEAM"
-    text: "Lorem ipsum dolor sit amet consectetur."
-    subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
+    title: "The author"
+    text: "Know a bit about the developer"
+    subtext: Gostaria de contribuir? <br> Entre em <a href='mailto:contato@consusoft.com.br'>contato</a> ou acesse a página do projeto no <a href='https://github.com/web-budget/'>github</a> para mais informações!
     section: team
     people:
-      - name: "Kay Garland"
-        role: "Lead Designer"
-        image: assets/img/team/500x500.jpg
+      - name: "Arthur Gregório"
+        role: "Developer"
+        image: assets/img/team/arthur.jpg
         social:
-          - url: https://twitter.com
+          - url: https://twitter.com/gregorioarthur
             icon: fab fa-twitter
-          - url: https://facebook.com
-            icon: fab fa-facebook-f
-          - url: https://linkedin.com
+          - url: https://github.com/arthurgregorio
+            icon: fab fa-github
+          - url: https://www.linkedin.com/in/gregorioarthur/
             icon: fab fa-linkedin-in
-      - name: "Larry Parker"
-        role: "Lead Marketer"
-        image: assets/img/team/2.jpg
-        social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://facebook.com
-            icon: fab fa-facebook-f
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
-      - name: "Diana Perterson"
-        role: "Lead Developer"
-        image: assets/img/team/500x500.jpg
-        social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://facebook.com
-            icon: fab fa-facebook-f
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
-
-  contact:
-    title: "Contact Us"
-    text: "Lorem ipsum or call 123456789"
-    section: contact
-    name: "Name*"
-    name-validation: "Please enter your name."
-    email: "Email*"
-    email-validation: "Please enter your email address."
-    phone: "Phone Number"
-    phone-validation: "Please enter your phone number."
-    message: "Message*"
-    message-validation: "Please enter a message."
-    subject: "Contact Form Submission"
-    submit: "Send Message"
 
   footer:
     legal: "Privacy Policy"
     social:
-      - url: https://twitter.com
-        icon: "fab fa-twitter"
-      - url: https://facebook.com
-        icon: "fab fa-facebook-f"
-      - url: https://linkedin.com
-        icon: "fab fa-linkedin-in"
-      - url: https://github.com/raviriley/agency-jekyll-theme
+      - url: https://github.com/web-budget
         icon: "fab fa-github"
-      - url: https://instagram.com
-        icon: "fab fa-instagram"
 en-US:
   <<: *DEFAULT_EN
 en-CA:

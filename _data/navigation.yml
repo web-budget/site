@@ -19,8 +19,8 @@ en: &DEFAULT_EN
   nav:
     - title: "Functionalities"
       section: services
-    - title: "Screenshots"
-      section: portfolio
+#    - title: "Screenshots"
+#      section: portfolio
     - title: "Timeline"
       section: timeline
     - title: "Author"
