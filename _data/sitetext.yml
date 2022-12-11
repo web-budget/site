@@ -171,7 +171,9 @@ en: &DEFAULT_EN
   team:
     title: "Author"
     text: "Know a bit more about the guy who started the project"
-    subtext: Gostaria de contribuir? <br> Entre em <a href='mailto:contato@consusoft.com.br'>contato</a> ou acesse a página do projeto no <a href='https://github.com/web-budget/'>github</a> para mais informações!
+    subtext: > 
+      Want to contribute? <br> Send me an e-mail <a href='mailto:contato@consusoft.com.br'>contato</a> or access our 
+      <a href='https://github.com/web-budget/'>github</a> page for more information!
     section: team
     people:
       - name: "Arthur Gregório"
