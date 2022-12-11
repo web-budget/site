@@ -101,7 +101,7 @@ en: &DEFAULT_EN
   header:
     title-1: web
     title-2: Budget
-    text: Financial control free and open-source
+    text: Free and open-source financial control
     button: Functionalities
     buttonlink: "#services"
 
@@ -110,23 +110,24 @@ en: &DEFAULT_EN
     text: >
       webBudget is a free and open-source application to manage your personal finances or even for small companies. It 
       will provide basic financial management with simple and clear functionalities and giving maximum visibility on what
-      is happening. Bellow you can find more details about the functionalities
+      is happening. Bellow you can find more details about the core functionalities but theres much more, the project is
+      <a target='_blank' href='https://github.com/orgs/web-budget/projects/3/views/1'>always evolving</a>
     section: services
     list:
       - title: "Financial Periods"
         desc: "Define fixed periods to have more control on your money, when it finishes, close it to see your results"
         icon: fas fa-file-invoice-dollar
-      - title: "Fixed and variable expenses"
+      - title: "Variable or Fixed"
         desc: "Track your expenses by period or if it happens every period, it can be registered as a fixed expense"
         icon: fas fa-money-bill
       - title: "Credit Card"
-        desc: "Import and organize your credit card invoice, dont lose track on what you are paying"
+        desc: "Import and organize your credit card invoice, dont get lost with your credit card"
         icon: fas fa-credit-card
       - title: "Classification"
         desc: "Organize your expenses/revenues with cost centers and classes, all personalized"
         icon: fas fa-tag
       - title: "Investments"
-        desc: "Simple support for tracking investments on stocks or funds"
+        desc: "Simple support for tracking stocks or funds investments"
         icon: fas fa-piggy-bank
       - title: "Dashboards"
         desc: "Keep tracking on what is happening with your money using helpful dashboards"
@@ -168,8 +169,8 @@ en: &DEFAULT_EN
     end: "What <br> is comming <br> next?"
 
   team:
-    title: "The author"
-    text: "Know a bit about the developer"
+    title: "Author"
+    text: "Know a bit more about the guy who started the project"
     subtext: Gostaria de contribuir? <br> Entre em <a href='mailto:contato@consusoft.com.br'>contato</a> ou acesse a página do projeto no <a href='https://github.com/web-budget/'>github</a> para mais informações!
     section: team
     people:
