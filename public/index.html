@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>webBudget · finanças pessoais, período a período</title>
+    <meta
+      name="description"
+      content="webBudget é um sistema livre e de código aberto para controlar o dinheiro da casa: carteiras, cartões, centros de custo e movimentos, fechados período a período. Versão 4 em desenvolvimento aberto."
+    />
+    <link rel="canonical" href="https://webbudget.com.br/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="webBudget" />
+    <meta property="og:url" content="https://webbudget.com.br/" />
+    <meta property="og:title" content="webBudget · finanças pessoais, período a período" />
+    <meta
+      property="og:description"
+      content="Sistema livre e de código aberto para controlar o dinheiro da casa. Versão 4 em desenvolvimento aberto no GitHub."
+    />
+    <meta property="og:image" content="https://webbudget.com.br/assets/og-image.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="webBudget: suas finanças, período a período." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="webBudget · finanças pessoais, período a período" />
+    <meta
+      name="twitter:description"
+      content="Sistema livre e de código aberto para controlar o dinheiro da casa. Versão 4 em desenvolvimento aberto no GitHub."
+    />
+    <meta name="twitter:image" content="https://webbudget.com.br/assets/og-image.png" />
+    <meta name="twitter:image:alt" content="webBudget: suas finanças, período a período." />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/theme.js"></script>
+  </head>
+  <body>
+    <header class="mast">
+      <div class="wrap">
+        <div class="mast-line">
+          <span>Finanças pessoais · livre e de código aberto · desde 2009</span>
+          <span>Versão 4 em desenvolvimento · alpha 3</span>
+        </div>
+        <div class="mast-row">
+          <a class="brand" href="/" aria-label="webBudget, início">
+            <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+              <rect class="bg" width="32" height="32" rx="3" />
+              <path class="fg" d="M9 19.50L8.01 11.76L9.62 11.76L10.28 18.15L10.41 18.15L11.46 11.76L13.21 11.76L14.25 18.15L14.39 18.15L15.06 11.76L16.59 11.76L15.60 19.50L13.28 19.50L12.38 13.82L12.24 13.82L11.33 19.50 M17.20 19.50L17.20 9.03L20.84 9.03Q22.33 9.03 23.13 9.77Q23.93 10.52 23.93 11.79Q23.93 12.69 23.49 13.23Q23.05 13.77 22.24 14.01L22.24 14.09Q23.18 14.31 23.73 14.90Q24.28 15.50 24.28 16.57Q24.28 17.23 24.06 17.77Q23.84 18.30 23.45 18.69Q23.05 19.08 22.49 19.29Q21.93 19.50 21.22 19.50L17.20 19.50M19.12 18.07L20.62 18.07Q21.45 18.07 21.86 17.77Q22.27 17.46 22.27 16.71L22.27 16.21Q22.27 15.48 21.86 15.17Q21.45 14.87 20.62 14.87L19.12 14.87L19.12 18.07M19.12 13.50L20.37 13.50Q21.16 13.50 21.54 13.21Q21.93 12.93 21.93 12.23L21.93 11.73Q21.93 11.03 21.54 10.74Q21.16 10.46 20.37 10.46L19.12 10.46" />
+              <rect class="hl" x="6.5" y="22.5" width="19" height="3.2" />
+            </svg>
+            <span class="brand-name">web<b>Budget</b></span>
+          </a>
+          <nav class="mast-nav" aria-label="Principal">
+            <a href="/#como-funciona">Como funciona</a>
+            <a href="/#recursos">Recursos</a>
+            <a href="/#andamento">Andamento</a>
+            <a href="/#historia">História</a>
+            <a href="https://github.com/web-budget/monorepo">GitHub</a>
+            <button type="button" class="theme-toggle" id="themeToggle" aria-label="Alternar tema claro ou escuro" hidden>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M6.3 17.7l-1.4 1.4M19.1 4.9l-1.4 1.4" /></svg>
+            </button>
+          </nav>
+        </div>
+        <hr class="rule-double" aria-hidden="true" />
+      </div>
+    </header>
+
+    <main id="topo">
+      <section class="hero">
+        <div class="wrap hero-grid">
+          <div>
+            <h1>Suas finanças, <span class="marker">período a período.</span></h1>
+            <p class="lede">O webBudget é um sistema <strong>livre e de código aberto</strong> para controlar o dinheiro da casa: carteiras, cartões, centros de custo e os movimentos do dia a dia, fechados mês a mês para você ver o resultado.</p>
+            <div class="actions">
+              <a class="btn" href="https://github.com/orgs/web-budget/projects/7">Acompanhar o desenvolvimento</a>
+              <a class="link" href="https://github.com/web-budget/monorepo">Ver o código no GitHub ↗</a>
+            </div>
+            <p class="status"><span>v4 em alpha</span><span>ainda sem release</span><span>Apache 2.0</span></p>
+          </div>
+
+          <figure class="folha" aria-label="Exemplo de um período financeiro">
+            <div class="folha-head">
+              <h2>Novembro 2026</h2>
+              <span class="chip">período aberto</span>
+            </div>
+            <table class="razao">
+              <tbody>
+                <tr><td class="d num">05/11</td><td>Salário</td><td class="c">Receitas</td><td class="v num in">6.800,00</td></tr>
+                <tr><td class="d num">06/11</td><td>Aluguel</td><td class="c">Moradia</td><td class="v num out">2.150,00</td></tr>
+                <tr><td class="d num">10/11</td><td>Mercado do mês</td><td class="c">Alimentação</td><td class="v num out">912,40</td></tr>
+                <tr><td class="d num">12/11</td><td><span class="marker">Fatura do cartão</span></td><td class="c">Cartões</td><td class="v num out">1.384,17</td></tr>
+                <tr><td class="d num">18/11</td><td>Plano de saúde</td><td class="c">Saúde</td><td class="v num out">486,00</td></tr>
+                <tr><td class="d num">20/11</td><td>Curso de inglês 3/10</td><td class="c">Educação</td><td class="v num out">320,00</td></tr>
+                <tr class="total"><td class="d"></td><td>Saldo até aqui</td><td class="c"></td><td class="v num in"><span>1.547,43</span></td></tr>
+              </tbody>
+            </table>
+            <figcaption class="folha-foot"><span>Dados de exemplo</span><span>Fecha em 30/11</span></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section" id="como-funciona">
+        <div class="wrap">
+          <div class="section-head">
+            <h2>Um mês de cada vez, em quatro passos.</h2>
+            <p>O webBudget organiza o dinheiro em períodos financeiros. Você lança o que entra e o que sai, fecha o período quando ele acaba e vê para onde foi cada real.</p>
+          </div>
+          <ol class="etapas">
+            <li class="etapa">
+              <div class="etapa-texto">
+                <span class="etapa-num">Passo 1</span>
+                <h3>Organize do seu jeito.</h3>
+                <p>Cadastre as carteiras e os cartões que você usa e monte a árvore de centros de custo e classificações. Tudo é seu para nomear e reorganizar.</p>
+                <ul><li>Carteiras e cartões</li><li>Centros de custo em hierarquia</li><li>Classificações de receita e despesa</li></ul>
+              </div>
+              <div>
+                <div class="peca">
+                  <ul class="arvore">
+                    <li>Moradia
+                      <ul><li>Aluguel</li><li>Condomínio</li><li>Energia</li></ul>
+                    </li>
+                    <li>Alimentação
+                      <ul><li>Mercado</li><li>Restaurantes</li></ul>
+                    </li>
+                    <li>Educação</li>
+                  </ul>
+                </div>
+                <p class="peca-legenda">Centros de custo · exemplo</p>
+              </div>
+            </li>
+
+            <li class="etapa">
+              <div class="etapa-texto">
+                <span class="etapa-num">Passo 2</span>
+                <h3>Lance o dia a dia.</h3>
+                <p>Registre receitas e despesas, deixe as contas fixas como recorrentes e acompanhe parcelas e faturas do cartão sem planilha paralela.</p>
+                <ul><li>Movimentos, transferências e extrato da carteira</li><li>Recorrentes e parcelados</li><li>Faturas de cartão</li></ul>
+                <div class="chips"><span class="chip wip">Em construção: importar fatura e extrato em OFX</span></div>
+              </div>
+              <div>
+                <div class="peca">
+                  <div class="mov"><div>Internet<small>Recorrente · todo dia 15</small></div><span class="num out">119,90</span></div>
+                  <div class="mov"><div>Geladeira<small>Cartão · parcela 4/12</small></div><span class="num out">287,50</span></div>
+                  <div class="mov"><div>Freela de design<small>Carteira corrente</small></div><span class="num in">1.200,00</span></div>
+                  <div class="mov"><div>Reserva<small>Transferência · corrente → poupança</small></div><span class="num">500,00</span></div>
+                </div>
+                <p class="peca-legenda">Movimentos · exemplo</p>
+              </div>
+            </li>
+
+            <li class="etapa">
+              <div class="etapa-texto">
+                <span class="etapa-num">Passo 3</span>
+                <h3>Feche o período.</h3>
+                <p>Quando o mês acaba, você fecha o período. O webBudget consolida tudo e mostra o resultado, e o que foi fechado fica guardado como histórico.</p>
+              </div>
+              <div>
+                <div class="peca resultado">
+                  <div class="linha"><strong>Outubro 2026</strong><span class="chip done">fechado</span></div>
+                  <div class="linha"><span>Receitas</span><span class="num in">8.000,00</span></div>
+                  <div class="linha"><span>Despesas</span><span class="num out">6.912,35</span></div>
+                  <div class="linha total"><span>Resultado</span><span class="num in">1.087,65</span></div>
+                </div>
+                <p class="peca-legenda">Fechamento · exemplo</p>
+              </div>
+            </li>
+
+            <li class="etapa">
+              <div class="etapa-texto">
+                <span class="etapa-num">Passo 4</span>
+                <h3>Veja de onde vem e para onde vai.</h3>
+                <p>Os dashboards mostram o fluxo do dinheiro: quanto entrou, por onde saiu e quanto sobrou em cada período.</p>
+                <div class="chips"><span class="chip wip">Em construção: dashboards em três visões</span></div>
+              </div>
+              <div>
+                <div class="peca fluxo">
+                  <div>
+                    <div class="fluxo-label"><span>Entrou</span><span class="num">8.000,00</span></div>
+                    <div class="barra" aria-hidden="true"><span class="c1" style="width: 85%"></span><span class="c3" style="width: 15%"></span></div>
+                  </div>
+                  <div>
+                    <div class="fluxo-label"><span>Saiu</span><span class="num">6.912,35</span></div>
+                    <div class="barra" aria-hidden="true"><span class="c4" style="width: 32.8%"></span><span class="c2" style="width: 20.7%"></span><span class="c5" style="width: 17.3%"></span><span class="c3" style="width: 15.6%"></span><span class="sobra" style="width: 13.6%"></span></div>
+                  </div>
+                  <div class="legenda"><span><i class="c1"></i>Salário</span><span><i class="c3"></i>Outros</span><span><i class="c4"></i>Moradia</span><span><i class="c2"></i>Alimentação</span><span><i class="c5"></i>Cartões</span><span><i class="sobra"></i>Sobrou 1.087,65</span></div>
+                </div>
+                <p class="peca-legenda">Fluxo financeiro · exemplo</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" id="recursos">
+        <div class="wrap">
+          <div class="section-head">
+            <h2>Feito para rodar em casa, com cuidado de sistema sério.</h2>
+          </div>
+          <dl class="ficha">
+            <div><dt>Hospedagem</dt><dd>Você roda no seu próprio servidor. Enquanto a v4 está em alpha, ela é compilada a partir do código-fonte; não há imagem pronta ainda.</dd></div>
+            <div><dt>Usuários</dt><dd>Várias pessoas na mesma instância, com permissões por área: Dashboards, Financeiro, Cadastros e Configurações. Quem se cadastra sozinho espera a aprovação do administrador.</dd></div>
+            <div><dt>Segurança</dt><dd>Verificação em dois fatores com aplicativo autenticador, obrigatória por padrão, dispositivos confiáveis por 30 dias e login com Google opcional.</dd></div>
+            <div><dt>Idiomas</dt><dd>Português do Brasil e inglês, na interface e nos e-mails. O dinheiro é sempre em reais.</dd></div>
+            <div><dt>Aparência</dt><dd>Tema claro, escuro ou o do sistema.</dd></div>
+            <div><dt>Investimentos</dt><dd>Ficam no <a class="link" href="https://investlog.com.br/">InvestLog</a>, o diário de investimentos do mesmo autor.</dd></div>
+            <div><dt>Licença</dt><dd>Apache 2.0. Use, estude, modifique e redistribua.</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section" id="andamento">
+        <div class="wrap andamento">
+          <div class="section-head">
+            <h2>A versão 4 está sendo escrita às claras.</h2>
+            <p>Todo trabalho começa como uma issue no GitHub e anda por um quadro público. Dá para ver o que está pronto, o que está sendo feito agora e o que vem depois.</p>
+            <div class="links-andamento">
+              <a class="btn" href="https://github.com/orgs/web-budget/projects/7">Abrir o quadro do projeto</a>
+              <a class="link" href="https://github.com/web-budget/monorepo/milestones">Milestones ↗</a>
+              <a class="link" href="https://github.com/web-budget/monorepo/wiki/Compilar-do-codigo-fonte">Compilar a partir do código ↗</a>
+            </div>
+          </div>
+          <div class="quadro">
+            <div class="quadro-head"><span>Na fila da alpha 3</span><span>atualizado em 26/11/2026</span></div>
+            <ol>
+              <li><a href="https://github.com/web-budget/monorepo/issues/160">Importar fatura e extrato em OFX</a></li>
+              <li><a href="https://github.com/web-budget/monorepo/issues/337">Dashboards em três visões</a></li>
+              <li><a href="https://github.com/web-budget/monorepo/issues/335">Conciliação de carteira</a></li>
+              <li><a href="https://github.com/web-budget/monorepo/issues/336">Cadastro inicial 50/30/20</a></li>
+              <li><a href="https://github.com/web-budget/monorepo/issues/332">Despesas extraordinárias</a></li>
+              <li><a href="https://github.com/web-budget/monorepo/issues/333">Reembolsos e despesas divididas</a></li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="historia">
+        <div class="wrap">
+          <div class="section-head">
+            <h2>Começou num pendrive, em 2009.</h2>
+          </div>
+          <ol class="historia">
+            <li><span class="ano">2009–2010</span><h3>As primeiras ideias</h3><p>Um projeto pequeno, pensado para rodar a partir de um pendrive e dar conta do controle financeiro básico.</p></li>
+            <li><span class="ano">2011–2013</span><h3>Virou rotina</h3><p>O uso diário pediu uma versão web.</p></li>
+            <li><span class="ano">2013–2014</span><h3>Nasce a versão 2</h3><p>Suporte à web e um layout simples.</p></li>
+            <li><span class="ano">2016</span><h3>Versão 3</h3><p>Visual novo, mais estabilidade e novas funcionalidades. É a versão estável até hoje.</p></li>
+            <li class="agora"><span class="ano">2021–hoje</span><h3><span class="marker">Versão 4</span></h3><p>Reescrita do zero com tecnologias novas, em desenvolvimento aberto no GitHub.</p></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" id="contribuir">
+        <div class="wrap contribuir">
+          <div>
+            <h2 class="contribuir-h">Quer contribuir ou tirar uma dúvida?</h2>
+            <p class="muted contribuir-p">Escreva para o projeto. O webBudget é mantido por Arthur Gregório desde a primeira versão.</p>
+            <div class="email"><code id="emailContato">contato@consusoft.com.br</code><button type="button" class="copiar" id="copiarEmail" aria-live="polite">Copiar e-mail</button></div>
+          </div>
+          <div class="contribuir-links">
+            <a class="link" href="https://github.com/web-budget/monorepo/wiki/Contribuindo">Como contribuir ↗</a>
+            <a class="link" href="https://github.com/web-budget/monorepo/wiki">Documentação na wiki ↗</a>
+            <a class="link" href="https://github.com/arthurgregorio/web-budget">Versão 3, a estável ↗</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="colofao">
+      <div class="wrap colofao-grid">
+        <p>webBudget · sistema livre de finanças pessoais · distribuído sob a <a href="https://github.com/web-budget/monorepo/blob/main/LICENSE">Licença Apache 2.0</a> · código em <a href="https://github.com/web-budget">github.com/web-budget</a></p>
+        <p class="colofao-dir">composto em IBM Plex Sans e IBM Plex Mono, no estilo Caderno verde · publicado pelo GitHub Pages · <a href="/privacidade.html">Privacidade</a> · <a href="/termos.html">Termos</a> · 2009–2026</p>
+      </div>
+    </footer>
+
+    <script src="/home.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <title>og-image · webBudget</title>
+    <!-- Fonte da imagem public/assets/og-image.png (1200×630). Veja o README para regerar. -->
+    <link rel="stylesheet" href="../public/styles.css" />
+    <style>
+      html,
+      body {
+        width: 1200px;
+        height: 630px;
+        margin: 0;
+        overflow: hidden;
+      }
+
+      .card {
+        position: relative;
+        width: 1200px;
+        height: 630px;
+        padding: 72px 80px;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        background: var(--background);
+        color: var(--foreground);
+        background-image: repeating-linear-gradient(
+          to bottom,
+          transparent 0,
+          transparent 53px,
+          var(--pauta) 53px,
+          var(--pauta) 54px
+        );
+        background-position: 0 14px;
+      }
+
+      .card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 56px;
+        border-left: 2px solid var(--expense);
+        opacity: 0.35;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .brand svg {
+        width: 72px;
+        height: 72px;
+      }
+
+      .brand .name {
+        font-size: 56px;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        line-height: 1;
+      }
+
+      .brand .name b {
+        font-weight: 700;
+        color: var(--primary);
+      }
+
+      h1 {
+        align-self: center;
+        font-size: 112px;
+        font-weight: 600;
+        letter-spacing: -0.035em;
+        line-height: 1.05;
+        max-width: 1000px;
+      }
+
+      .foot {
+        display: flex;
+        justify-content: space-between;
+        font-family: var(--font-mono);
+        font-size: 26px;
+        color: var(--muted-foreground);
+      }
+
+      .rule {
+        position: absolute;
+        left: 80px;
+        right: 80px;
+        bottom: 118px;
+        height: 8px;
+        border-top: 2px solid var(--foreground);
+        border-bottom: 2px solid var(--foreground);
+        opacity: 0.75;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="brand">
+        <svg viewBox="0 0 32 32" aria-hidden="true">
+          <rect fill="var(--primary)" width="32" height="32" rx="3" />
+          <path fill="var(--primary-foreground)" d="M9 19.50L8.01 11.76L9.62 11.76L10.28 18.15L10.41 18.15L11.46 11.76L13.21 11.76L14.25 18.15L14.39 18.15L15.06 11.76L16.59 11.76L15.60 19.50L13.28 19.50L12.38 13.82L12.24 13.82L11.33 19.50 M17.20 19.50L17.20 9.03L20.84 9.03Q22.33 9.03 23.13 9.77Q23.93 10.52 23.93 11.79Q23.93 12.69 23.49 13.23Q23.05 13.77 22.24 14.01L22.24 14.09Q23.18 14.31 23.73 14.90Q24.28 15.50 24.28 16.57Q24.28 17.23 24.06 17.77Q23.84 18.30 23.45 18.69Q23.05 19.08 22.49 19.29Q21.93 19.50 21.22 19.50L17.20 19.50M19.12 18.07L20.62 18.07Q21.45 18.07 21.86 17.77Q22.27 17.46 22.27 16.71L22.27 16.21Q22.27 15.48 21.86 15.17Q21.45 14.87 20.62 14.87L19.12 14.87L19.12 18.07M19.12 13.50L20.37 13.50Q21.16 13.50 21.54 13.21Q21.93 12.93 21.93 12.23L21.93 11.73Q21.93 11.03 21.54 10.74Q21.16 10.46 20.37 10.46L19.12 10.46" />
+          <rect fill="var(--highlight)" x="6.5" y="22.5" width="19" height="3.2" />
+        </svg>
+        <span class="name">web<b>Budget</b></span>
+      </div>
+      <h1>Suas finanças, <span class="marker">período a período.</span></h1>
+      <div class="rule"></div>
+      <div class="foot">
+        <span>Livre e de código aberto · v4 em desenvolvimento</span>
+        <span>webbudget.com.br</span>
+      </div>
+    </div>
+  </body>
+</html>
