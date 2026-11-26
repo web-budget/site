@@ -9,6 +9,8 @@ Tudo o que vai ao ar fica em `public/`:
 - `index.html` e as demais páginas;
 - `styles.css`: tokens do Caderno verde (claro e escuro), fontes e estilos base;
 - `theme.js`: botão de tema, com a escolha salva em `localStorage` (chave `webbudget.site.theme`);
+- `home.js`: botão "Copiar e-mail" da página inicial;
+- `assets/og-image.png`: imagem de compartilhamento (1200×630), gerada de `tools/og-image.html`;
 - `assets/fonts/`: IBM Plex Sans e IBM Plex Mono em `woff2`, com a licença OFL;
 - `favicon.svg` e `apple-touch-icon.png`: a marca do webBudget.
 
@@ -37,3 +39,11 @@ Os tokens de cor, raio e tipografia vêm do `client/src/assets/theme.css` do mon
 ## Licença
 
 O código do site segue a licença do repositório ([LICENSE](LICENSE)). As fontes IBM Plex seguem a SIL Open Font License 1.1 (`public/assets/fonts/OFL.txt`).
+
+## Imagem de compartilhamento
+
+`public/assets/og-image.png` é gerada de `tools/og-image.html`, que usa os tokens e as fontes de `public/`. Para regerar, com o Chrome instalado:
+
+```sh
+chrome --headless=new --hide-scrollbars --force-device-scale-factor=1 --window-size=1200,630 --virtual-time-budget=3000 --screenshot=public/assets/og-image.png tools/og-image.html
+```
