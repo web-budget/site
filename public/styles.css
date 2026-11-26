@@ -1,0 +1,319 @@
+/* webBudget — site. Caderno verde: tokens iguais aos do client (theme.css). */
+
+/* ---------- Fontes (hospedadas aqui, subconjunto latin) ---------- */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('assets/fonts/ibm-plex-sans-latin-400-normal.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('assets/fonts/ibm-plex-sans-latin-500-normal.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('assets/fonts/ibm-plex-sans-latin-600-normal.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('assets/fonts/ibm-plex-sans-latin-700-normal.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('assets/fonts/ibm-plex-mono-latin-400-normal.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('assets/fonts/ibm-plex-mono-latin-500-normal.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* ---------- Tokens: claro ---------- */
+:root {
+  color-scheme: light;
+
+  --font-sans: 'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', monospace;
+
+  --radius: 0.1875rem;
+  --radius-sm: calc(var(--radius) - 1px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 1px);
+  --radius-xl: calc(var(--radius) + 3px);
+
+  --background: oklch(0.985 0.004 160);
+  --foreground: oklch(0.22 0.02 165);
+  --card: oklch(0.995 0.003 160);
+  --card-foreground: oklch(0.22 0.02 165);
+  --popover: oklch(0.995 0.003 160);
+  --popover-foreground: oklch(0.22 0.02 165);
+  --primary: oklch(0.46 0.1 160);
+  --primary-foreground: oklch(0.98 0.01 160);
+  --secondary: oklch(0.945 0.012 160);
+  --secondary-foreground: oklch(0.26 0.03 165);
+  --muted: oklch(0.955 0.008 160);
+  --muted-foreground: oklch(0.5 0.02 165);
+  --accent: oklch(0.94 0.025 160);
+  --accent-foreground: oklch(0.3 0.06 162);
+  --destructive: oklch(0.54 0.19 27);
+  --destructive-foreground: oklch(0.98 0.01 27);
+  --border: oklch(0.88 0.012 160);
+  --input: oklch(0.84 0.016 160);
+  --ring: oklch(0.55 0.13 160);
+
+  --highlight: oklch(0.9 0.1 82);
+  --highlight-foreground: oklch(0.32 0.06 70);
+
+  --income: oklch(0.5 0.12 155);
+  --income-muted: oklch(0.94 0.035 158);
+  --expense: oklch(0.54 0.17 28);
+  --expense-muted: oklch(0.95 0.025 28);
+
+  --chart-1: oklch(0.46 0.1 160);
+  --chart-2: oklch(0.75 0.13 75);
+  --chart-3: oklch(0.55 0.1 255);
+  --chart-4: oklch(0.6 0.15 30);
+  --chart-5: oklch(0.55 0.08 330);
+
+  --sidebar: oklch(0.965 0.008 160);
+  --sidebar-foreground: oklch(0.22 0.02 165);
+  --sidebar-primary: oklch(0.46 0.1 160);
+  --sidebar-primary-foreground: oklch(0.98 0.01 160);
+  --sidebar-accent: oklch(0.935 0.014 160);
+  --sidebar-accent-foreground: oklch(0.22 0.02 165);
+  --sidebar-border: oklch(0.88 0.012 160);
+  --sidebar-ring: oklch(0.55 0.13 160);
+}
+
+/* ---------- Tokens: escuro ----------
+   Vale pela preferência do sistema (a menos que o usuário tenha forçado o claro)
+   e por data-theme="dark" na raiz. Os dois blocos têm os mesmos valores. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    color-scheme: dark;
+
+    --background: oklch(0.17 0.012 165);
+    --foreground: oklch(0.94 0.008 160);
+    --card: oklch(0.205 0.013 165);
+    --card-foreground: oklch(0.94 0.008 160);
+    --popover: oklch(0.225 0.014 165);
+    --popover-foreground: oklch(0.94 0.008 160);
+    --primary: oklch(0.74 0.12 158);
+    --primary-foreground: oklch(0.18 0.03 165);
+    --secondary: oklch(0.27 0.016 165);
+    --secondary-foreground: oklch(0.92 0.01 160);
+    --muted: oklch(0.25 0.014 165);
+    --muted-foreground: oklch(0.7 0.015 160);
+    --accent: oklch(0.27 0.03 160);
+    --accent-foreground: oklch(0.86 0.07 158);
+    --destructive: oklch(0.66 0.17 25);
+    --destructive-foreground: oklch(0.16 0.03 25);
+    --border: oklch(0.32 0.016 165);
+    --input: oklch(0.37 0.018 165);
+    --ring: oklch(0.76 0.13 158);
+
+    --highlight: oklch(0.47 0.09 75);
+    --highlight-foreground: oklch(0.92 0.08 85);
+
+    --income: oklch(0.76 0.13 155);
+    --income-muted: oklch(0.3 0.05 158);
+    --expense: oklch(0.72 0.15 28);
+    --expense-muted: oklch(0.3 0.06 28);
+
+    --chart-1: oklch(0.74 0.12 158);
+    --chart-2: oklch(0.82 0.12 78);
+    --chart-3: oklch(0.7 0.1 255);
+    --chart-4: oklch(0.7 0.14 30);
+    --chart-5: oklch(0.7 0.08 330);
+
+    --sidebar: oklch(0.19 0.012 165);
+    --sidebar-foreground: oklch(0.94 0.008 160);
+    --sidebar-primary: oklch(0.74 0.12 158);
+    --sidebar-primary-foreground: oklch(0.18 0.03 165);
+    --sidebar-accent: oklch(0.25 0.016 165);
+    --sidebar-accent-foreground: oklch(0.94 0.008 160);
+    --sidebar-border: oklch(0.29 0.014 165);
+    --sidebar-ring: oklch(0.76 0.13 158);
+  }
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+
+  --background: oklch(0.17 0.012 165);
+  --foreground: oklch(0.94 0.008 160);
+  --card: oklch(0.205 0.013 165);
+  --card-foreground: oklch(0.94 0.008 160);
+  --popover: oklch(0.225 0.014 165);
+  --popover-foreground: oklch(0.94 0.008 160);
+  --primary: oklch(0.74 0.12 158);
+  --primary-foreground: oklch(0.18 0.03 165);
+  --secondary: oklch(0.27 0.016 165);
+  --secondary-foreground: oklch(0.92 0.01 160);
+  --muted: oklch(0.25 0.014 165);
+  --muted-foreground: oklch(0.7 0.015 160);
+  --accent: oklch(0.27 0.03 160);
+  --accent-foreground: oklch(0.86 0.07 158);
+  --destructive: oklch(0.66 0.17 25);
+  --destructive-foreground: oklch(0.16 0.03 25);
+  --border: oklch(0.32 0.016 165);
+  --input: oklch(0.37 0.018 165);
+  --ring: oklch(0.76 0.13 158);
+
+  --highlight: oklch(0.47 0.09 75);
+  --highlight-foreground: oklch(0.92 0.08 85);
+
+  --income: oklch(0.76 0.13 155);
+  --income-muted: oklch(0.3 0.05 158);
+  --expense: oklch(0.72 0.15 28);
+  --expense-muted: oklch(0.3 0.06 28);
+
+  --chart-1: oklch(0.74 0.12 158);
+  --chart-2: oklch(0.82 0.12 78);
+  --chart-3: oklch(0.7 0.1 255);
+  --chart-4: oklch(0.7 0.14 30);
+  --chart-5: oklch(0.7 0.08 330);
+
+  --sidebar: oklch(0.19 0.012 165);
+  --sidebar-foreground: oklch(0.94 0.008 160);
+  --sidebar-primary: oklch(0.74 0.12 158);
+  --sidebar-primary-foreground: oklch(0.18 0.03 165);
+  --sidebar-accent: oklch(0.25 0.016 165);
+  --sidebar-accent-foreground: oklch(0.94 0.008 160);
+  --sidebar-border: oklch(0.29 0.014 165);
+  --sidebar-ring: oklch(0.76 0.13 158);
+}
+
+/* ---------- Base ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: clip;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+td,
+input[inputmode='decimal'] {
+  font-variant-numeric: tabular-nums;
+}
+
+:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+/* Marca-texto âmbar, igual ao utilitário "marker" do client. */
+.marker {
+  background-image: linear-gradient(
+    transparent 55%,
+    var(--highlight) 55%,
+    var(--highlight) 92%,
+    transparent 92%
+  );
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---------- Página provisória (substituída na #17) ---------- */
+.placeholder {
+  min-height: 100svh;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 1rem;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+.placeholder img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.placeholder h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.placeholder p {
+  margin: 0;
+  color: var(--muted-foreground);
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.375rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--card);
+  color: var(--card-foreground);
+  font: inherit;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  background: var(--accent);
+  color: var(--accent-foreground);
+}
