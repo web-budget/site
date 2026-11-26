@@ -1229,3 +1229,102 @@ a {
     font-size: var(--text-sm);
   }
 }
+
+/* ==========================================================================
+   Privacidade, termos e 404 (#18)
+   ========================================================================== */
+.legal-page {
+  padding-block: var(--space-2xl) var(--space-3xl);
+}
+
+.legal {
+  max-width: 46rem;
+}
+
+.legal .back {
+  display: inline-block;
+  margin-bottom: var(--space-lg);
+  font-size: var(--text-sm);
+}
+
+.legal h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.legal-updated {
+  margin-top: var(--space-xs);
+  margin-bottom: var(--space-xl);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--muted-foreground);
+}
+
+.legal h2 {
+  margin-top: var(--space-xl);
+  padding-top: var(--space-md);
+  border-top: var(--rule-hair) solid var(--border);
+  font-size: var(--text-xl);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 1.2;
+}
+
+.legal p {
+  margin-top: var(--space-sm);
+}
+
+.legal h1 + .legal-updated + p {
+  margin-top: 0;
+}
+
+.legal a:not(.link) {
+  text-decoration: underline;
+  text-decoration-color: var(--input);
+  text-underline-offset: 0.25em;
+  white-space: nowrap;
+  transition: text-decoration-color var(--dur-fast) var(--ease-out);
+}
+
+.legal a:not(.link):hover {
+  text-decoration-color: var(--primary);
+}
+
+.legal code {
+  padding: 0.1rem 0.35rem;
+  border-radius: var(--radius);
+  background: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  overflow-wrap: anywhere;
+}
+
+.nao-encontrada {
+  padding-block: var(--space-3xl);
+}
+
+.nao-encontrada-codigo {
+  margin-bottom: var(--space-sm);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--primary);
+}
+
+.nao-encontrada h1 {
+  font-size: var(--text-display);
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1.02;
+}
+
+@media (max-width: 40rem) {
+  .legal-page {
+    padding-block: var(--space-xl) var(--space-2xl);
+  }
+
+  .nao-encontrada {
+    padding-block: var(--space-2xl);
+  }
+}
